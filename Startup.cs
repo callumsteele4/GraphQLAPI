@@ -11,6 +11,8 @@ namespace GraphQLApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton<ProductsRepository>();
+            services.AddSingleton<PriceRepository>();
+            services.AddSingleton<StockRepository>();
 
             services.AddGraphQL(sp => SchemaBuilder.New()
                 .AddQueryType<Query>()

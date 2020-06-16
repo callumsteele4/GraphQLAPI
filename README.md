@@ -19,6 +19,8 @@ type Mutation {
 type Product {
   createdAt: DateTime!
   id: Uuid!
+  price: Int!
+  inStock: Boolean!
 }
 
 type Query {
@@ -37,3 +39,4 @@ scalar Uuid
 This repository is intended to act as a reference for a [series of blog posts](https://blog.callumsteele.com/tag/graphql) that cover [GraphQL](https://graphql.org), [HotChocolate](https://hotchocolate.io), and [ASP.NET Core 2.1](https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-2.1).
 
 1. [GraphQL in ASP.NET Core](https://blog.callumsteele.com/graphql-in-asp-net-core)
+2. [Nested Resolvers in GraphQL and ASP.NET Core](https://blog.callumsteele.com/structuring-resolvers-in-graphql-and-asp-net-core/)
